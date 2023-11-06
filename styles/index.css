@@ -1,0 +1,43 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.container,
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  block-size: 100vh;
+}
+
+.card {
+  padding: 1rem;
+  max-inline-size: 576px;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+}
+
+.card .img-container img {
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 0.8rem;
+}
+
+.card .text-container {
+  text-align: center;
+}
+
+.card .text-container p {
+  color: var(--dark-blue);
+}
